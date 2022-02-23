@@ -1,17 +1,17 @@
 import random
 import string
 
-from words import words
+from word import word
 
-def get_valid_word (words):
-    word =random.choice(words)
+def get_valid_word (word):
+    word =random.choice(word)
     # this will randomly pick a random word from the list. 
-    while '_' in words or ' ' in words:
+    while '_' in word or ' ' in word:
 
-        return words 
+        return word
 
 def thehangmangame():
-    word = get_valid_word(words)
+    word = get_valid_word(word)
     word_letters = set(word) 
     # 
     Alphabet = set(string.ascii_lowercase)
