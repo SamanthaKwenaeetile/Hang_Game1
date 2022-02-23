@@ -8,7 +8,7 @@ def get_valid_word (word):
     # this will randomly pick a random word from the list. 
     while '_' in word or ' ' in word:
 
-        return word
+        return word.lower()
 
 def thehangmangame():
     word = get_valid_word(word)
@@ -19,6 +19,11 @@ def thehangmangame():
      #  this will keep the words that the user has gussed.
 
 # the user input 
+while len(word_letters) >0:
+    # the letters that the users have used
+    print('these letters you have used', ''.join(used_letters))
+
+ # 
 user_letter = input('Guess a letter:').ascii_lowercase()
 if user_letter in Alphabet - used_letters:
     used_letters.add(used_letter)
@@ -31,6 +36,7 @@ if user_letter in Alphabet - used_letters:
     else:
         print('invalid letter enterd please try again')
         
-user_input = input ('enter a letter here')
-print(user_input)
+
+
+
 
