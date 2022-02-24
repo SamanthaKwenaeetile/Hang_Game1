@@ -40,16 +40,15 @@ if user_letter in Alphabet - used_letters:
         print('')
 
  else: 
-       lives = lives - 1  # to take away a life if wrong word
+        lives = lives - 1  # to take away a life if wrong word
          print('\nYour letter,', user_letter, 'is not in the word.')
-         
-   
+
     elif user_letter in used_letters:
         print('You used the same letter before try again')
     
     else:
         print('invalid letter enterd please try again')
-        
+
 
  # gets here when len(word_letters) == 0 OR when lives == 0
     if lives == 0:
