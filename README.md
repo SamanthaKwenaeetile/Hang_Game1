@@ -1,31 +1,103 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+## Hangman Game
 
-Welcome Samantha Kwenaeetile,
+ * A hangman game application where the player will have to guess letters (A-Z) to form the words on the line, If the player will have to gusses the right letter that is within a word. The letter will appear on its correct posistion. The player will then guess the correct world until the man is hung when this appear the game will be done.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+* The hangman game will include a login and sign up, this will be stored in MogoDB.
 
-## Reminders
+ Link to webpage .......
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+image of game here.....
 
-## Creating the Heroku app
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+Project Goal
 
-1. `heroku/python`
-2. `heroku/nodejs`
+wireframe (image)
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+site map (image)
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+The user goal 
 
-Connect your GitHub repository and deploy as normal.
+1. 
+2.
+3.
 
-## Constraints
+The app owner goal 
+1.
+2.
+3.
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+User experince
 
------
-Happy coding!
+Target Audience
+
+* 
+*
+*
+
+Structure 
+
+
+Features 
+
+1. Banner 
+
+2. Main Menu
+
+3. Login
+
+4. Sign Up
+
+5. Exit
+
+6. Support 
+
+Technologies 
+
+Languages 
+
+* Python
+
+Validation 
+
+
+
+Bugs 
+
+
+* Deployment 
+
+ The website was deployed using GitHub to Heroku by following these steps: 
+
+1. Create an account at heroku.com
+2. Create a new app, add app name and your region
+3. Click on create app
+4. Go to "Settings"
+Under Config Vars, add your sensitive data (the MongoDB URL for example)
+For this project, set buildpacks to and in that order.
+Go to "Deploy" and at "Deployment method", click on "Connect to Github"
+Enter your repository name and click on it.
+Choose the branch you want to buid your app from, and click "Deploy branch".
+You can for fork the repository by following these steps:
+
+Go to the GitHub repository
+Click on Fork button in upper right hand corner
+You can clone the repository by following these steps:
+
+Go to the GitHub repository
+Locate the Code button above the list of files and click it
+Select if you prefere to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
+Open Git Bash
+Change the current working directory to the one where you want the cloned directory
+Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+Press Enter to create your local clone
+
+
+# Credits 
+
+
+
+* Code 
+
+
+
+* Reference Material 
