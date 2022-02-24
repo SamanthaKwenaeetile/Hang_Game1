@@ -13,17 +13,25 @@ def get_valid_word (word):
 def thehangmangame():
     word = get_valid_word(word)
     word_letters = set(word) 
-    # 
     Alphabet = set(string.ascii_lowercase)
     used_letters = set() 
      #  this will keep the words that the user has gussed.
+
+lives = 5
 
 # the user input 
 while len(word_letters) >0:
     # the letters that the users have used
     print('these letters you have used', ''.join(used_letters))
 
- # 
+
+
+# current word 
+
+word_list = [letter if letter in used_letters else '-' for letter in word]
+ print(lives_visual_dict[lives])
+ print('the current word is : ', ' '.join(word_list))
+
 user_letter = input('Guess a letter:').ascii_lowercase()
 if user_letter in Alphabet - used_letters:
     used_letters.add(used_letter)
