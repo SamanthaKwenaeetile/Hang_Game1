@@ -29,15 +29,21 @@ while len(word_letters) >0:
 # current word 
 
 word_list = [letter if letter in used_letters else '-' for letter in word]
- print(lives_visual_dict[lives])
- print('the current word is : ', ' '.join(word_list))
+print(lives_dict[lives])
+print('the current word is : ', ' '.join(word_list))
 
 user_letter = input('Guess a letter:').ascii_lowercase()
 if user_letter in Alphabet - used_letters:
     used_letters.add(used_letter)
     if used_letter in word_letters:
         word_letters.remove(user_letter)
+        print('')
 
+ else: 
+       lives = lives - 1  # takes away a life if wrong
+         print('\nYour letter,', user_letter, 'is not in the word.')
+         
+   
     elif user_letter in used_letters:
         print('You used the same letter before try again')
     
