@@ -50,15 +50,16 @@ else:
     print('the letter that has been enterd is invalid please do try again.')
 
 
- # gets here when len(word_letters) == 0 OR when lives == 0
+ 
+# gets here when len(word_letters) == 0 OR when lives == 0
 if lives == 0:
         print(lives_visual_dict[lives])
         print('You died, sorry. The word was', word)
 
 else:
-    print('well done you have guessed the right word', word, '!!'')        
-    
+    print('well done you have guessed the right word', word, '!!')
+   
+        
 if __name__ == '__main__':
     thehangmangame()
-
 
