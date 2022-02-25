@@ -39,25 +39,25 @@ if user_letter in Alphabet - used_letters:
         word_letters.remove(user_letter)
         print('')
 
- else: 
-    lives = lives - 1  # to take away a life if wrong word
-     print('\nYour letter,', user_letter, 'is not in the list.')
+else: 
+    lives = lives - 1 
+    print('your letter,' , user_letter, 'is nit in the list of words')
 
-    elif user_letter in used_letters:
+if user_letter in used_letters:
         print('You used the same letter before try again')
     
-    else:
-        print('invalid letter enterd please try again')
+else:
+    print('the letter that has been enterd is invalid please do try again.')
 
 
  # gets here when len(word_letters) == 0 OR when lives == 0
-    if lives == 0:
+if lives == 0:
         print(lives_visual_dict[lives])
         print('You died, sorry. The word was', word)
-    else:
-        print('YAY! You guessed the word', word, '!!')
 
-
+else:
+    print('well done you have guessed the right word', word, '!!'')        
+    
 if __name__ == '__main__':
     thehangmangame()
 
