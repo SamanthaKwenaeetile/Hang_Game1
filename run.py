@@ -11,9 +11,9 @@ def play_again():
     else:
         pass
 
-def get_word():
-    words =["adult","aeroplane","air","aircraft-carrier" ,"airforce" ,"airport" ,"album" ,"alphabet","apple","desk","diamond","dress", "drill","drink","film","finger","fire","milk","store","bottle","out-put","results"]
-    return random.choice(words)
+def get_random_word():
+   random_word = random.choice(open("words.txt", "r").read().split('\n'))
+   return random_word.upper()
 
     for x in word:
       print("_", end=" ")
@@ -71,19 +71,7 @@ def play_game():
 
 
 
-        else: 
-            lives = lives - 1
-            print('your letter,',user_letter,'is not in the list of words')
-
-    if user_letter in used_letters:
-       print('You used the same letter before try again')
-    else:
-      print('the letter is invalid please do try again.') 
-    if lives == 0:
-        print(lives_visual_dict[lives])
-        print('You died, sorry. The word was', word)
-    else:
-        print('well done you have guessed the right word', word, '!!')
+print("Game is over! Thank you for playing :)")
 
 if __name__ == '__main__':
    play_again()
