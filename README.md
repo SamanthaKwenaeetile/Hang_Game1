@@ -5,7 +5,7 @@
 * The hangman game will include a login and sign up, this will be stored in MogoDB.
 
  Link to webpage .......
- 
+ https://samanthakwenaeetile.github.io/Hang_Game1/
 
 
 image of game here.....
