@@ -37,7 +37,7 @@ Target Audience
 Structure 
 
 
-Features 
+Features  that i could have done to improve the game.
 
 1. Banner 
 
@@ -46,8 +46,6 @@ Features
 3. Login
 
 4. Sign Up
-
-5. Exit
 
 6. Support 
 
@@ -94,7 +92,9 @@ Press Enter to create your local clone
 
 # Credits 
 
+### **Thanks**
 
+code Institute mentors who adived and thier guidance and support on the completion of this project.
 
 * Code 
 

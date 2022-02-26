@@ -1,65 +1,91 @@
 import random
-import string
+import string                                                                                                                                               
 
-from word import word
+print("Welcome to The HangMan Game")
+print("-------------------------------------------")
 
-def get_valid_word (word):
-    word =random.choice(word)
-    # this will randomly pick a random word from the list. 
-    while '_' in word or ' ' in word:
+def play_again():
+    answer = input('Would you like to play again? yes/no').lower()
+    if answer == 'y' or answer =='yes':
+        play_game()
+    else:
+        pass
 
-        return word.lower()
+def get_word():
+    words =["adult","aeroplane","air","aircraft-carrier" ,"airforce" ,"airport" ,"album" ,"alphabet","apple","desk","diamond","dress", "drill","drink","film","finger","fire","milk","store","bottle","out-put","results"]
+    return random.choice(words)
 
-def thehangmangame():
-    word = get_valid_word(word)
-    word_letters = set(word) 
-    Alphabet = set(string.ascii_lowercase)
-    used_letters = set() 
-     #  this will keep the words that the user has gussed.
+    for x in word:
+      print("_", end=" ")
 
-lives = 5
+def print_hangman(wrong):
+  if(wrong == 0):
+    print("\n+---+")
+    print("    |")
+    print("    |")
+    print("    |")
+    print("   ===")
+  elif(wrong == 1): 
+    print("\n+---+")
+    print("O   |")
+    print("    |")
+    print("    |")
+    print("   ===")
+  elif(wrong == 2):
+    print("\n+---+")
+    print("O   |")
+    print("|   |")
+    print("    |")
+    print("   ===")
+  elif(wrong == 3):
+    print("\n+---+")
+    print(" O  |")
+    print("/|  |")
+    print("    |")
+    print("   ===")
+  elif(wrong == 4):
+    print("\n+---+")
+    print(" O  |")
+    print("/|\ |")
+    print("    |")
+    print("   ===")
+  elif(wrong == 5):
+    print("\n+---+")
+    print(" O  |")
+    print("/|\ |")
+    print("/   |")
+    print("   ===")
+  elif(wrong == 6):
+    print("\n+---+")
+    print(" O   |")
+    print("/|\  |")
+    print("/ \  |")
+    print("    ===")
 
-# the user input 
-while len(word_letters) >0:
-    # the letters that the users have used
-    print('these letters you have used', ''.join(used_letters))
 
-
-
-# current word 
-
-word_list = [letter if letter in used_letters else '-' for letter in word]
-print(lives_dict[lives])
-print('the current word is : ', ' '.join(word_list))
-
-user_letter = input('Guess a letter:').ascii_lowercase()
-if user_letter in Alphabet - used_letters:
-    used_letters.add(used_letter)
-    if used_letter in word_letters:
-        word_letters.remove(user_letter)
-        print('')
-
-else: 
-    lives = lives - 1 
-    print('your letter,' , user_letter, 'is nit in the list of words')
-
-if user_letter in used_letters:
-        print('You used the same letter before try again')
+def play_game():
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    word = get_word()
+    used_letters = set()
     
-else:
-    print('the letter that has been enterd is invalid please do try again.')
 
 
- 
-# gets here when len(word_letters) == 0 OR when lives == 0
-if lives == 0:
+
+        else: 
+            lives = lives - 1
+            print('your letter,',user_letter,'is not in the list of words')
+
+    if user_letter in used_letters:
+       print('You used the same letter before try again')
+    else:
+      print('the letter is invalid please do try again.') 
+    if lives == 0:
         print(lives_visual_dict[lives])
         print('You died, sorry. The word was', word)
+    else:
+        print('well done you have guessed the right word', word, '!!')
 
-else:
-    print('well done you have guessed the right word', word, '!!')
-   
-        
 if __name__ == '__main__':
-    thehangmangame()
-
+   play_again()
+ 
+play_game()
