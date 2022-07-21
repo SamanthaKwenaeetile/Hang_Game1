@@ -65,32 +65,13 @@ def hangman():
     else:
         print(' You guessed the word', word, '!!')
 
-def hangman_title():
-    print(
-        """
-              
- _______  __   __  _______   __   __  _______  __    _  _______  __   __  _______  __    _   _______  _______  __   __  _______ 
-|       ||  | |  ||       | |  | |  ||   _   ||  |  | ||       ||  |_|  ||   _   ||  |  | | |       ||   _   ||  |_|  ||       |
-|_     _||  |_|  ||    ___| |  |_|  ||  |_|  ||   |_| ||    ___||       ||  |_|  ||   |_| | |    ___||  |_|  ||       ||    ___|
-  |   |  |       ||   |___  |       ||       ||       ||   | __ |       ||       ||       | |   | __ |       ||       ||   |___ 
-  |   |  |       ||    ___| |       ||       ||  _    ||   ||  ||       ||       ||  _    | |   ||  ||       ||       ||    ___|
-  |   |  |   _   ||   |___  |   _   ||   _   || | |   ||   |_| || ||_|| ||   _   || | |   | |   |_| ||   _   || ||_|| ||   |___ 
-  |___|  |__| |__||_______| |__| |__||__| |__||_|  |__||_______||_|   |_||__| |__||_|  |__| |_______||__| |__||_|   |_||_______|
-
-        """
-    )
-
-
-if __name__ == '__main__':
-    hangman()
-
-play_again = input('do you want to play again (y/n)').upper()
-if play_again == 'y':
-    word = random.choice(words)
-elif play_again == 'n':
-    print('thank you for playing the hangman game.')
-while play_again != 'y' and play_again != 'n':
-    print('Guess a letter. (y/n)')
-    play_again =  input('Guess a letter: ').upper()
+def play_again():
+	play_again = input("Do you wnat to play again(y/n): ").lower()
+	if play_again == "y":
+		return hangman(words)
+	else:
+		return "Thanks for playing" 
 	
-    
+ if __name__ == '__main__':
+    hangman()
+    play_again()
