@@ -10,9 +10,9 @@ print("-------------------------------------------")
 def play_again():
     play_again = input("Do you wnat to play again(y/n): ").lower()
     if play_again == "y":
-    return hangman(words)
-else:
-    return "Thanks for playing" 
+        return hangman(words)
+    else:
+        print("Thanks for playing the hangman")
 
 def get_valid_word(words):
     word = random.choice(words)  # randomly chooses something from the list
@@ -34,10 +34,15 @@ def hangman():
     while len(word_letters) > 0 and lives > 0:
         # letters used
         # ' '.join(['a', 'b', 'cd']) --> 'a b cd'
-        print('You have', lives, 'lives left and you have used these letters: ', ' '.join(used_letters))
+        print(
+             'You have', lives,
+             'lives left and you have used these letters:',
+             ' '.join(used_letters))
 
         # what current word is (ie W - R D)
-        word_list = [letter if letter in used_letters else '-' for letter in word]
+        word_list = [
+            letter if letter in used_letters
+            else '-' for letter in word]
         print(lives_visual_dict[lives])
         print('Current word: ', ' '.join(word_list))
 
@@ -65,11 +70,9 @@ def hangman():
     else:
         print(' You guessed the word', word, '!!')
 
-def play_again():
-    play_again = input("Do you wnat to play again(y/n): ").lower()
-    if play_again == "y":
-        return hangman(words)
-	else:
-        return "Thanks for playing" 	
-if __ name__ == '__main__':
-    hangman()
+def hangman():
+    print("end of game")
+if __name__ =="__main__":
+        play_again()
+    else: 
+        print("end of game!")
