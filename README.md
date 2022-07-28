@@ -26,12 +26,14 @@
 ### **User Goals**
 
 1.  The game should be easy to play
-2.  The game be fun for the user to get them to keep coming back
-3.  Challenge the player by adding lives to keep the user intersted in the game 
+2.  The game should be fun for the user to get them to keep coming back
+3.  The game should challenge the player to keep the user intersted in the game 
 
 Target Audience
-*  player 16 and over
-*  I love for spelling 
+*  Player that over the age of 5 and over.
+*  Players that have a love for spelling. 
+*  Players that want to expand thier vocabulary and spelling.
+
  
 ## ** Features **
 ### ** Existing features in game**
@@ -39,14 +41,14 @@ Target Audience
 1. Can view lives while playing the game 
 * the user has a certain amount of lives before the game is over, it can be seen while the player is playing the game, it is also represtend along side the hangman being built at each turn when a life is lost.
 
-2. Can view the rules of the game
+2. Can view the rules of the game - ?????
 * the words will be picked in randomly from a word list.
 * the number of letters in a word will be showen by _ _ _ _ .
 
 3. Game will check invalid inputs 
 * all the inputs that the player will enter , checks will run to ensure that the is no invalid inputs that have been submitted - all invalid inputs will be followed by a error message letting the player know to try again.
 
-* Features  that i could have done to improve the game.
+* Features that i could have done to improve and better the Hangamn Game.
 
 1. Banner 
 
@@ -61,7 +63,9 @@ Target Audience
 # ** Technologies **
 * Languages 
 
- Python
+ 1. Python
+ 2. HTML
+ 3. Java Script 
 
 # ** Testing **
 
@@ -70,9 +74,11 @@ Target Audience
 1. I tested the python code using a PEP8 linter website and then i fixed any erros. 
 (http://pep8online.com/) 
 
-2. I tested in the terninal and also on the site heroku which i used to deploye the site.
+2. I tested the game on the terninal and also on the site heroku which i used to deploye the site to see if the worked and did not have any erros. 
 
 3. I manually tested the user inputs by entering the wrong data to confrim any error messages.
+
+4. I used the W3C markup validator to check the markup validity.
 
 ## **Validators**
 * PEP8 - No errors returned from (http://pep8online.com/).
@@ -108,12 +114,10 @@ Press Enter to create your local clone
 # Credits 
 
 * [Code Institute](https://codeinstitute.net/) for the mock terminal for the deploy to a live site.
-
-* [Python Hang Man tutorial] :
-1. 
-2. 
-3. 
-4. * [ASCII Art Generator](https://patorjk.com/software/taag/#p=display&h=2&f=Soft&t=The%20Hangman%20game) - for creating word art for game 
+1.  * [ASCII Art Generator](https://patorjk.com/software/taag/#p=display&h=2&f=Soft&t=The%20Hangman%20game) 
+2.  * [Priyam Kapoor](https://www.youtube.com/watch?v=WZZ9pY-cP2s) 
+3.  * [Tokyo Edtech ](https://www.youtube.com/watch?v=-6jSIjH1e3M)
+4.  * [CBT Nuggets](https://www.youtube.com/watch?v=JNXmCOumNw0)
 
 ### **Thanks**
 * code Institute mentors who adived and thier guidance and support on the completion of this project.

@@ -8,11 +8,11 @@ print("-------------------------------------------")
 
 
 def play_again():
-	play_again = input("Do you wnat to play again(y/n): ").lower()
-	if play_again == "y":
-		return hangman(words)
-	else:
-		return "Thanks for playing" 
+    play_again = input("Do you wnat to play again(y/n): ").lower()
+    if play_again == "y":
+    return hangman(words)
+else:
+    return "Thanks for playing" 
 
 def get_valid_word(words):
     word = random.choice(words)  # randomly chooses something from the list
@@ -66,12 +66,10 @@ def hangman():
         print(' You guessed the word', word, '!!')
 
 def play_again():
-	play_again = input("Do you wnat to play again(y/n): ").lower()
-	if play_again == "y":
-		return hangman(words)
+    play_again = input("Do you wnat to play again(y/n): ").lower()
+    if play_again == "y":
+        return hangman(words)
 	else:
-		return "Thanks for playing" 
-	
- if __name__ == '__main__':
+        return "Thanks for playing" 	
+if __ name__ == '__main__':
     hangman()
-    play_again()
