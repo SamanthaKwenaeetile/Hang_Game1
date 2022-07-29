@@ -62,8 +62,14 @@ def hangman():
     if lives == 0:
         print(lives_visual_dict[lives])
         print("happy news you the game is now over")
-    else:
-        print('yes you have guessed the word', word, '!!')
+
+
+def main():
+    word = get_word()
+    play(word)
+    while input("play again? (y/n) ").upper() == "y":
+        word = get_word()
+        play(word)
 
 
 if __name__ == '__main__':
