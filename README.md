@@ -3,7 +3,7 @@
  * A hangman game application where the player will have to guess letters (A-Z) to form the words on the line, If the player will have to gusses the right letter that is within a word. The letter will appear on its correct posistion. The player will then guess the correct world until the man is hung when this appear the game will be done.
 
 * The image of the live site.
-![Am I Responsive?] <img width="1437" alt="Screenshot 2022-02-26 at 6 05 52 am" src="https://user-images.githubusercontent.com/74901613/155832002-6e644ec9-8b2a-4123-b4b8-014175237971.png">
+![https://thehanggame.herokuapp.com/] <img width="1437" alt="Screenshot 2022-02-26 at 6 05 52 am" src="https://user-images.githubusercontent.com/74901613/155832002-6e644ec9-8b2a-4123-b4b8-014175237971.png">
 
 
 # *How the user will play the hangman game *
@@ -69,7 +69,7 @@ Target Audience
 
 3. I manually tested the user inputs by entering the wrong data to confrim any error messages.
 
-4. I used the W3C markup validator to check the markup validity.
+4. I used the W3C markup validator to check the markup validity.(https://validator.w3.org/nu/?doc=https%3A%2F%2Fthehanggame.herokuapp.com%2F)
 
 ## **Validators**
 * PEP8 - No errors returned from (http://pep8online.com/checkresult).
