@@ -1,6 +1,6 @@
 ## Hangman Game
 
- * A hangman game application where the player will have to guess letters (A-Z) to form the words on the line, If the player will have to gusses the right letter that is within a word. The letter will appear on its correct posistion. The player will then guess the correct world until the man is hung when this appear the game will be done.
+ * A hangman game application where the player will have to guess letters (A-Z) to form the words on the line, If the player will have to gusses the right letter that is within a word. The letter will appear on its correct posistion. The player will then guess the correct world until the man is hung when this appear the game will be done. 
 
 * The image of the live site.
 ![https://thehanggame.herokuapp.com/] <img width="1437" alt="Screenshot 2022-02-26 at 6 05 52 am" src="https://user-images.githubusercontent.com/74901613/155832002-6e644ec9-8b2a-4123-b4b8-014175237971.png">
@@ -8,7 +8,7 @@
 
 # *How the user will play the hangman game *
 
-* The player of the hangman game will have to input a command into the mock terminal, when they enter a letter into the game which they will have gussed it will infrom the user if the letter they have enterd is the correct letter or word they have gussed. If it is the correct word they will have won the game if it is the incorrect letter or word an error message will then display it self and the user will then be asked to resubmit thier choice again.
+* The player of the hangman game will have to input a command into the mock terminal, when they enter a letter into the game which they will have gussed it will infrom the user if the letter they have enterd is the correct letter or word they have gussed. If it is the correct word they will have won the game if it is the incorrect letter or word an error message will then display it self and the user will then be asked to resubmit thier choice again. For the user to play again they run the game again.
 
 * Design flowchart
 ![alt text](images/Screenshot%202022-07-29%20at%208.31.53%20am.png)
@@ -16,7 +16,7 @@
 
 * wireframe (image)
 
-![alt text](images/Screenshot%202022-07-29%20at%209.39.05%20am.png)
+![alt text](images/Screenshot%202022-07-29%20at%209.48.16%20am.png)
 
 ### **User Goals**
 
@@ -63,7 +63,7 @@ Target Audience
 * The testing which i have done for the hangman game project are :
 
 1. I tested the python code using a PEP8 linter website and then i fixed any erros. 
-(http://pep8online.com/checkresult) 
+(http://pep8online.com/) 
 
 2. I tested the game on the terninal and also on the site heroku which i used to deploye the site to see if the worked and did not have any erros. 
 
