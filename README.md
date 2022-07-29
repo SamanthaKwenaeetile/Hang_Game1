@@ -16,7 +16,7 @@
 
 * wireframe (image)
 
-![20220226_065852](https://user-images.githubusercontent.com/74901613/155834444-c2dd15cb-c480-422a-8930-594e24fa5eb1.jpg)
+![alt text](images/Screenshot%202022-07-29%20at%209.39.05%20am.png)
 
 ### **User Goals**
 
