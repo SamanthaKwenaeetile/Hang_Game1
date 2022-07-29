@@ -4,15 +4,22 @@ from gamevisual import lives_visual_dict
 import string
 
 print("Welcome to The HangMan Game")
+name= input("what is your name: ")
+print("welcome" + name + "! best of luke...")
+time.sleep(3)
+print("test begins now...\n")
+time.sleep(2)
 print("-------------------------------------------")
 
 
 def play_again():
-    play_again = input("Do you wnat to play again(y/n): ").lower()
-    if play_again == "y":
-        return hangman(words)
-    else:
-        print("Thanks for playing the hangman")
+    play_again = input("Do you wnat to play again? 1 = yes, 2 = no \n)
+    while play_again not in ["1", "2"]:
+        play_again = input("Do You want to play again? 1 = yes, 2 = no \n")
+    if play_again == "1":
+        main()
+    elif play_again == "2":
+        exit()
 
 def get_valid_word(words):
     word = random.choice(words)  # randomly chooses something from the list
@@ -28,7 +35,7 @@ def hangman():
     alphabet = set(string.ascii_uppercase)
     used_letters = set()  # what the user has guessed
 
-    lives = 7
+    lives = 5
 
     # getting user input
     while len(word_letters) > 0 and lives > 0:
@@ -66,13 +73,17 @@ def hangman():
     # gets here when len(word_letters) == 0 OR when lives == 0
     if lives == 0:
         print(lives_visual_dict[lives])
-        print('You died, sorry. The word was', word)
-    else:
-        print(' You guessed the word', word, '!!')
-
-def hangman():
-    print("end of game")
-if __name__ =="__main__":
+        print("happy news you the game is now over")
         play_again()
-    else: 
-        print("end of game!")
+
+    elif count != lives:
+        hangman()
+
+
+main()
+
+
+hangman()
+    
+
+
