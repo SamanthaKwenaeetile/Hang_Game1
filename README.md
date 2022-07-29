@@ -112,4 +112,4 @@ Press Enter to create your local clone
 4.  * [CBT Nuggets](https://www.youtube.com/watch?v=JNXmCOumNw0)
 
 ### **Thanks**
-* code Institute mentors who adived and thier guidance and support on the completion of this project.
+* code Institute mentors who advised and thier guidance and support on the completion of this project.
